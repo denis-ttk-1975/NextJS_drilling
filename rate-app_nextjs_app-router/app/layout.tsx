@@ -1,8 +1,16 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const noto_sans = Noto_Sans({
+    variable: '--noto-sans-font',
+    weight: ['300', '400', '500', '700'],
+    style: ['normal'],
+    fallback: ['sans-serif'],
+    subsets: ['cyrillic', 'cyrillic-ext', 'latin', 'latin-ext'],
+    preload: true,
+    display: 'swap',
+    });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -12,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
     <html lang='ru'>
-      <body className={inter.className}>{children}</body>
+      <body className={noto_sans.className}>{children}</body>
     </html>
   );
 }
