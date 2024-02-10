@@ -12,7 +12,7 @@ export default function Home(): JSX.Element {
 <Htag tag = {'h1'}>Наименование 111</Htag>
 <Htag tag = {'h2'}>Наименование 222</Htag>
 <Htag tag = {'header_title'}>Наименование Title Header</Htag>
-<div style = {{padding: 10}}><Button appearance='primary'>ОТправить</Button></div>
+<div style = {{padding: 10}}><Button appearance='primary'>Отправить!!! :) !!!</Button></div>
 <div style = {{padding: 10}}><Button appearance='like'>Л</Button></div>
 
 </>
