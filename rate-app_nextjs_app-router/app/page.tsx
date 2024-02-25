@@ -1,4 +1,4 @@
-import { Button, Htag } from '@/components';
+import { Button, Htag, Paragraph } from '@/components';
 import type { Metadata } from 'next';
 // import styles from './page.module.css';
 
@@ -17,6 +17,10 @@ export default function Home(): JSX.Element {
 <div style = {{padding: 10}}><Button appearance='primary' arrow = 'right'>Отправить!!! :) !!!</Button></div>
 <div style = {{padding: 10}}><Button appearance='like'>Л</Button></div>
 <div style = {{padding: 10}}><Button appearance='ghost' arrow = 'down'>Привидение</Button></div>
+
+<Paragraph>Средний размерчик </Paragraph>
+<Paragraph typography = 'large' >Большой размерчик </Paragraph>
+<Paragraph typography = 'small' >Малый размерчик </Paragraph>
 
 </>
   );
