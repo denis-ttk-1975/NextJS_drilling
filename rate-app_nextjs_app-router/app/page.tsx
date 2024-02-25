@@ -9,6 +9,8 @@ export const metadata: Metadata = {
 export default function Home(): JSX.Element {
   return (
 <>
+<Htag tag = {'h1'}>App Router новый</Htag>
+
 <Htag tag = {'h1'}>Наименование 111</Htag>
 <Htag tag = {'h2'}>Наименование 222</Htag>
 <Htag tag = {'header_title'}>Наименование Title Header</Htag>
