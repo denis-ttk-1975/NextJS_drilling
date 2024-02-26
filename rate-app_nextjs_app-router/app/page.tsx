@@ -1,4 +1,6 @@
-import { Button, Htag, Paragraph, Tag } from '@/components';
+"use client";
+
+import { Button, Htag, Paragraph, Tag, Rating } from '@/components';
 import type { Metadata } from 'next';
 // import styles from './page.module.css';
 
@@ -27,6 +29,8 @@ export default function Home(): JSX.Element {
 <Tag size = 'small' color = 'green'>Green</Tag>
 <Tag size = 'small' color = 'primary'>Purple</Tag>
 <Tag size = 'small' color = 'grey'>Grey</Tag>
+
+<Rating rating = {2} />
 
 
 </>
