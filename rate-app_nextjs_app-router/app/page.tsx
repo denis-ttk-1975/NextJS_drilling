@@ -1,7 +1,9 @@
-"use client";
+'use client';
 
 import { Button, Htag, Paragraph, Tag, Rating } from '@/components';
 import type { Metadata } from 'next';
+
+import { useState } from 'react';
 // import styles from './page.module.css';
 
 export const metadata: Metadata = {
@@ -9,6 +11,8 @@ export const metadata: Metadata = {
   description: 'мое приложение на Next.js',
 };
 export default function Home(): JSX.Element {
+
+    const [rating, setRating] = useState(1);
   return (
 <>
 <Htag tag = {'h1'}>App Router новый</Htag>
@@ -30,7 +34,7 @@ export default function Home(): JSX.Element {
 <Tag size = 'small' color = 'primary'>Purple</Tag>
 <Tag size = 'small' color = 'grey'>Grey</Tag>
 
-<Rating rating = {2} />
+<Rating rating = {rating} isEditable setRating = {setRating}/>
 
 
 </>
