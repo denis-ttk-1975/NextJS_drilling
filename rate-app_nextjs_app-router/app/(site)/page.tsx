@@ -1,4 +1,3 @@
-
 import type { Metadata } from 'next';
 
 import styles from './page.module.css';
@@ -12,19 +11,13 @@ export const metadata: Metadata = {
   description: 'мое приложение на Next.js',
 };
 
-
 export default async function Home(): Promise<JSX.Element> {
-    console.log('I am Home!!!');
-    const menu = await getMenu(0);
+  console.log('I am Home!!!');
+  const menu = await getMenu(0);
 
   return (
-<main className = { styles.main }>
-    ГЛАВНАЯ СТРАНИЦА
-    <div>{JSON.stringify(menu)}</div>
-    <Menu />
+    <main className={styles.main}>
+      <div>ГЛАВНАЯ СТРАНИЦА</div>
     </main>
-
-
-
   );
 }
